@@ -1,0 +1,30 @@
+.myrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pull-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-responsive{
+    max-height: 80px;
+}
+
+.display-1{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.lead{
+    font-size: 15px;  
+}
+
+.list-group-item{
+    cursor: pointer; 
+    margin: 10px; 
+    height: 100px;
+}

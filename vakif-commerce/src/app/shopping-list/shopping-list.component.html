@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-xs-5">
+        <app-shopping-edit 
+        ></app-shopping-edit>
+        <hr>
+        <ul class="list-group">
+            <a class="list-group-item"
+            style="cursor:pointer" *ngFor="let x of products">
+                {{x.ProductName}} | {{x.ProductDescription}} | {{x.ProductPrice}}£ 
+            </a>
+        </ul>
+        <hr>
+        <button class="btn btn-primary" type="button">Go To CheckOut</button>
+    </div>
+</div>
