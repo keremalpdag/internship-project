@@ -1,0 +1,35 @@
+<div class="container" *ngIf="signedIn === false">
+    <form class="fom-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <div id="heading" class="row">
+            <div class="col-xs-16">
+                <h1>Sign In</h1>
+            </div>
+        </div>
+        <br>
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="email" name="email" ngModel class="form-control" placeholder="Email"
+        required>
+        <br>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" id="password" name="password" ngModel class="form-control" placeholder="Password"
+        required>
+        <div class="row">
+            <a style="cursor: pointer;" routerLink="../user-register">Not a member? Sign Up!</a>
+        </div>
+
+        <div id="signInButton" class="row">
+            <div class="col-xs-16">
+                <button class="btn btn-success" type="submit">Sign In</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div *ngIf="signedIn === true">
+ <h1>Log In works.</h1>
+ <div id="signOunButton" class="row">
+    <div class="col-xs-16">
+        <button class="btn btn-success" (click)="logout()">Sign Out</button>
+    </div>
+</div>
+</div>

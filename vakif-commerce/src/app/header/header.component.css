@@ -1,0 +1,12 @@
+nav a{
+    color: black;
+}
+
+nav{
+    background-color: #ffb300;
+    border-top: 1px solid #ed9c29;
+    border-bottom: 1px solid #db9127;
+    border-left: 1px solid #ed9c29;
+    border-right: 1px solid #ed9c29;
+}
+ 
